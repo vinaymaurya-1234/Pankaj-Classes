@@ -1,0 +1,104 @@
+.admission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #e0f7ff, #cce7ff); 
+}
+
+.admission-box {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: #333;
+}
+
+.admission-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+  text-align: center; 
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+.form-group label {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #3b82f6;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #f0f9ff;
+  color: #333;
+  transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 10px rgba(37, 99, 235, 0.3);
+}
+
+.gender-options input {
+  margin-right: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.form-buttons button {
+  width: 48%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.form-buttons button[type="submit"] {
+  background: linear-gradient(to right, #2563eb, #1e3a8a);
+  color: white;
+}
+
+.form-buttons button[type="reset"] {
+  background: linear-gradient(to right, #ef4444, #b91c1c);
+  color: white;
+}
+
+.form-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .admission-box {
+    padding: 20px;
+    width: 90%;
+  }
+
+  .admission-box h2 {
+    font-size: 2rem;
+  }
+}
